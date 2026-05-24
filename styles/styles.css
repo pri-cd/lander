@@ -8,12 +8,12 @@
     --font-fallback: sans-serif;
 
 
-    --clr-primary: #f9faf8;
-    --clr-secondary: #d0d3d8;
+    --clr-primary-a: #f9faf8;
+    --clr-secondary-a: #d0d3d8;
     /* Replaced secondary color with this. (#e537eb) */
 
-    --clr-bg-primary: #1f2937;
-    --clr-bg-buttons: #3882f6;
+    --clr-bg-primary-a: #1f2937;
+    --clr-bg-buttons-a: #3882f6;
 
 
     --default-border-rad: 5px;
@@ -28,7 +28,7 @@
 
 .attribution {
     font-size: 9px;
-    color: var(--clr-secondary);
+    color: var(--clr-secondary-a);
 }
 
 /* Fixing global links, messy underline behaviour. */
@@ -46,27 +46,30 @@ body {
 /* Working on Header Code */
 .header,
 .section-a {
-    background-color: var(--clr-bg-primary);
+    background-color: var(--clr-bg-primary-a);
+    padding-left: 18vw;
+    padding-right: 18vw;
 
 }
 
 .header {
     margin: 0;
-    padding: 0px 10vw;
+    padding-top: 16px;
+    padding-bottom: 16px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.header div {
+.logo-text {
     font-size: 24px;
-    color: var(--clr-primary);
+    color: var(--clr-primary-a);
     font-weight: bolder;
 }
 
 ul {
-    color: var(--clr-secondary);
+    color: var(--clr-secondary-a);
     list-style: none;
     font-size: 12px;
     margin: 0;
@@ -78,24 +81,25 @@ ul {
 
 /* Working on Section A */
 .section-a {
-    padding: 50px 10vw;
+    padding-top: 50px;
+    padding-bottom: 50px;
     display: flex;
     gap: 16px;
 }
 
-.section-a-heading {
+.heading-text {
     font-size: 42px;
     font-weight: 900;
-    color: #e5e7eb;
+    color: var(--clr-primary-a);
     margin-bottom: 16px;
 }
 
-.section-a-information {
-    font-size: 12px;
-    color: var(--clr-secondary);
+.sub-text {
+    font-size: 18px;
+    color: var(--clr-secondary-a);
 }
 
-.section-a img {
+.section-a div img {
     height: 250px;
     width: 500px;
     border-radius: var(--default-border-rad);
@@ -104,12 +108,13 @@ ul {
 
 .section-a div button {
     border: none;
-    background-color: var(--clr-bg-buttons);
+    background-color: var(--clr-bg-buttons-a);
     margin-top: 16px;
-    font-size: 12px;
+    
+    font-size: 18px;
+    color: var(--clr-secondary-a);
+    font-weight: bolder;
 
-
-    color: var(--clr-secondary);
     padding: 5px 32px;
     border-radius: var(--default-border-rad);
 }
