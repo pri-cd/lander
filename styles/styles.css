@@ -9,11 +9,12 @@
 
 
     --clr-primary-a: #f9faf8;
-    --clr-secondary-a: #d0d3d8;
-    /* Replaced secondary color with this. (#e537eb) */
+    --clr-secondary-a: #e5e7eb;
 
     --clr-bg-primary-a: #1f2937;
     --clr-bg-buttons-a: #3882f6;
+
+    --clr-primary-b: #1f2937;
 
 
     --default-border-rad: 5px;
@@ -27,7 +28,7 @@
 /* For Attribution Purposes only */
 
 .attribution {
-    font-size: 9px;
+    font-size: 12px;
     color: var(--clr-secondary-a);
 }
 
@@ -110,11 +111,55 @@ ul {
     border: none;
     background-color: var(--clr-bg-buttons-a);
     margin-top: 16px;
-    
+
     font-size: 18px;
     color: var(--clr-secondary-a);
     font-weight: bolder;
 
     padding: 5px 32px;
     border-radius: var(--default-border-rad);
+}
+
+
+/* Working on Section-b */
+.dark-font {
+    color: var(--clr-primary-b);
+}
+
+.card-img {
+    height: 120px;
+    padding: 32px;
+    border: 5px solid var(--clr-bg-buttons-a);
+    border-radius: calc(var(--default-border-rad) + 10px);
+}
+
+
+.section-b
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.card-container
+{
+    display: flex;
+    gap: 32px;
+}
+
+.card
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.card .sub-text
+{
+    text-align: center;
+    max-width: 250px;
 }
