@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Creting global variables for default settings. */
+:root {
+
+    --font-primary: "Roboto";
+    --font-fallback: sans-serif;
+
+
+    --clr-primary: #f9faf8;
+    --clr-secondary: #d0d3d8;
+    /* Replaced secondary color with this. (#e537eb) */
+
+    --clr-bg-primary: #1f2937;
+    --clr-bg-buttons: #3882f6;
+
+
+    --default-border-rad: 5px;
+}
+
+* {
+    font-family: var(--font-primary), var(--font-fallback);
+}
+
+
+/* For Attribution Purposes only */
+
+.attribution {
+    font-size: 9px;
+    color: var(--clr-secondary);
+}
+
+/* Fixing global links, messy underline behaviour. */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Working on Header Code */
+.header,
+.section-a {
+    background-color: var(--clr-bg-primary);
+
+}
+
+.header {
+    margin: 0;
+    padding: 0px 10vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header div {
+    font-size: 24px;
+    color: var(--clr-primary);
+    font-weight: bolder;
+}
+
+ul {
+    color: var(--clr-secondary);
+    list-style: none;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    gap: 16px;
+}
+
+/* Working on Section A */
+.section-a {
+    padding: 50px 10vw;
+    display: flex;
+    gap: 16px;
+}
+
+.section-a-heading {
+    font-size: 42px;
+    font-weight: 900;
+    color: #e5e7eb;
+    margin-bottom: 16px;
+}
+
+.section-a-information {
+    font-size: 12px;
+    color: var(--clr-secondary);
+}
+
+.section-a img {
+    height: 250px;
+    width: 500px;
+    border-radius: var(--default-border-rad);
+    box-shadow: 0px 0px 15px 3px rgba(255, 255, 255, 0.096);
+}
+
+.section-a div button {
+    border: none;
+    background-color: var(--clr-bg-buttons);
+    margin-top: 16px;
+    font-size: 12px;
+
+
+    color: var(--clr-secondary);
+    padding: 5px 32px;
+    border-radius: var(--default-border-rad);
+}
