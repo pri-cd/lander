@@ -10,11 +10,11 @@
 
     --clr-primary-a: #f9faf8;
     --clr-secondary-a: #e5e7eb;
+    --clr-primary-b: #1f2937;
 
     --clr-bg-primary-a: #1f2937;
     --clr-bg-buttons-a: #3882f6;
-
-    --clr-primary-b: #1f2937;
+    --clr-bg-primary-c: #e5e7eb;
 
 
     --default-border-rad: 5px;
@@ -46,8 +46,8 @@ body {
 
 /* Working on Header Code */
 .header,
-.section-a {
-    background-color: var(--clr-bg-primary-a);
+.section-a,
+.section-b {
     padding-left: 18vw;
     padding-right: 18vw;
 
@@ -57,6 +57,8 @@ body {
     margin: 0;
     padding-top: 16px;
     padding-bottom: 16px;
+    background-color: var(--clr-bg-primary-a);
+
 
     display: flex;
     align-items: center;
@@ -84,30 +86,34 @@ ul {
 .section-a {
     padding-top: 50px;
     padding-bottom: 50px;
+    background-color: var(--clr-bg-primary-a);
+
     display: flex;
     gap: 16px;
 }
 
-.heading-text {
+.sec-a-heading {
     font-size: 42px;
     font-weight: 900;
     color: var(--clr-primary-a);
     margin-bottom: 16px;
 }
 
-.sub-text {
+.sub-text,
+.header-sub-text,
+.sec-a-sub {
     font-size: 18px;
     color: var(--clr-secondary-a);
 }
 
-.section-a div img {
+.sec-a-img-focus {
     height: 250px;
     width: 500px;
     border-radius: var(--default-border-rad);
     box-shadow: 0px 0px 15px 3px rgba(255, 255, 255, 0.096);
 }
 
-.section-a div button {
+.sec-a-sign-up-button {
     border: none;
     background-color: var(--clr-bg-buttons-a);
     margin-top: 16px;
@@ -122,8 +128,30 @@ ul {
 
 
 /* Working on Section-b */
-.dark-font {
+
+.section-b {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.sec-b-heading {
+    font-size: 36px;
+    font-weight: 900;
     color: var(--clr-primary-b);
+}
+
+.sec-b-sub {
+    font-size: 18px;
+    color: var(--clr-primary-b);
+    text-align: center;
+    max-width: 250px;
+}
+
+.card-container {
+    display: flex;
+    gap: 32px;
 }
 
 .card-img {
@@ -134,22 +162,7 @@ ul {
 }
 
 
-.section-b
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-}
-
-.card-container
-{
-    display: flex;
-    gap: 32px;
-}
-
-.card
-{
+.card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -157,9 +170,6 @@ ul {
     gap: 10px;
 }
 
-
-.card .sub-text
-{
-    text-align: center;
-    max-width: 250px;
+.apply-sec-b-primary-color {
+    color: var(--clr-primary-b);
 }
