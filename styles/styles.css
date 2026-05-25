@@ -13,9 +13,10 @@
     --clr-primary-b: #1f2937;
 
     --clr-bg-primary-a: #1f2937;
-    --clr-bg-buttons-a: #3882f6;
+    --clr-bg-button: #3882f6;
     --clr-bg-primary-c: #e5e7eb;
 
+    --clr-primary-d: #e5e7eb;
 
     --default-border-rad: 5px;
 }
@@ -49,6 +50,7 @@ body {
 .section-a,
 .section-b,
 .section-c,
+.section-d,
 .footer {
     padding-left: 18vw;
     padding-right: 18vw;
@@ -85,7 +87,8 @@ ul {
 
 .section-a,
 .section-b,
-.section-c {
+.section-c,
+.section-d {
     padding-top: 50px;
     padding-bottom: 50px;
 
@@ -126,7 +129,7 @@ ul {
 
 .sec-a-sign-up-button {
     border: none;
-    background-color: var(--clr-bg-buttons-a);
+    background-color: var(--clr-bg-button);
     margin-top: 16px;
 
     font-size: 18px;
@@ -168,7 +171,7 @@ ul {
 .card-img {
     height: 120px;
     padding: 32px;
-    border: 5px solid var(--clr-bg-buttons-a);
+    border: 5px solid var(--clr-bg-button);
     border-radius: calc(var(--default-border-rad) + 10px);
 }
 
@@ -203,27 +206,65 @@ ul {
     text-align: center;
 }
 
-.author
-{
+.author {
     width: 100%;
     font-size: 20px;
     text-align: right;
     padding-right: 100px;
 }
 
+/* Working on Section-D */
+.section-d {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.sec-d-container {
+    width: 100%;
+    padding: 50px;
+
+    padding-right: 100px;
+    padding-left: 100px;
+
+    border-radius: var(--default-border-rad);
+    background-color: var(--clr-bg-button);
+
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sec-d-heading {
+    font-size: 20px;
+    font-weight: bolder;
+    color: var(--clr-primary-d);
+}
+
+.sec-d-subtext {
+    font-size: 16px;
+    color: var(--clr-primary-d);
+}
+
+.sec-d-action-button
+{
+    padding: 5px 30px 5px 30px;
+    border-radius: var(--default-border-rad);
+    border: 2px solid var(--clr-primary-d);
+    background-color: var(--clr-bg-button);
+    color: var(--clr-primary-d);
+}
 
 /* Working on Footer */
-.footer
-{
+.footer {
     display: flex;
     align-items: center;
-    
+
     padding: 32px;
     background-color: var(--clr-bg-primary-a);
 }
 
-.footer-text
-{
+.footer-text {
     color: var(--clr-primary-a);
     width: 100%;
     text-align: center;
