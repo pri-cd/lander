@@ -47,10 +47,11 @@ body {
 /* Working on Header Code */
 .header,
 .section-a,
-.section-b {
+.section-b,
+.section-c,
+.footer {
     padding-left: 18vw;
     padding-right: 18vw;
-
 }
 
 .header {
@@ -77,6 +78,16 @@ ul {
     font-size: 12px;
     margin: 0;
     padding: 0;
+
+    display: flex;
+    gap: 16px;
+}
+
+.section-a,
+.section-b,
+.section-c {
+    padding-top: 50px;
+    padding-bottom: 50px;
 
     display: flex;
     gap: 16px;
@@ -172,4 +183,48 @@ ul {
 
 .apply-sec-b-primary-color {
     color: var(--clr-primary-b);
+}
+
+/* Working on Section-C */
+
+.section-c {
+
+    background-color: var(--clr-bg-primary-c);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.author
+{
+    width: 100%;
+    font-size: 20px;
+    text-align: right;
+    padding-right: 100px;
+}
+
+
+/* Working on Footer */
+.footer
+{
+    display: flex;
+    align-items: center;
+    
+    padding: 32px;
+    background-color: var(--clr-bg-primary-a);
+}
+
+.footer-text
+{
+    color: var(--clr-primary-a);
+    width: 100%;
+    text-align: center;
 }
